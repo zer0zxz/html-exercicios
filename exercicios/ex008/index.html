@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantica - Aula Guanabara</title>
+    <style>
+        h1{
+            color: red;
+        }
+        code{
+            color: maroon;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formatações Guanabara</h1>
+    <h2>Negrito e Destaque</h2>
+    <p>Texto em <b>Negrito</b> apenas,se usa a tag B.</p>
+    <p>Ja um texto <strong>Forte ou Destacado</strong> s usa a tag strong.</p>
+    <h2>Textos em italico / enfase</h2>
+    <p>O termo em <i>italico</i> usando tag I sem semantica.</p>
+    <p>Agora um <em>termo com semantica tag EM</em>.</p>
+    <h2>Texto Marcado</h2>
+    <p>Podemos criar um <mark style="background-color: green;">texto marcado</mark> usando a tag MARK<p>
+    <h2>Usando texto grande e pequeno</h2>
+    <p>Aqui um <big>texto grande</big> e <small>agora um pequeno</small>(usando big e small,<del>big esta obsoleto</del>,<ins>small tem seu uso</ins>).</p>
+    <h2>Texto sobrescrito tag sup</h2>
+    <p>Usado para inserir cosias tipo x<sup>3</sup>+333</p>
+    <h2>Texto subescrito tag sub</h2>
+    <p>Usado para coisas em baixo tipo H<sub>2</sub>O</p>
+    <h2>Escrever Códigos</h2>
+    <h3>Código fonte / Pré Formatação</h3>
+    <p>Exemplo,o comando <code>document.getElementById('test')</code> é um comando do JavaScript.</p>
+    <pre>
+        <code>
+            num = int(input('Digite um numero'))
+
+            if num % 2 == 0:
+                print(f'O numero {num} é um numero par')
+            else:
+                print(f'O numero {num} é um numero impar')
+        </code>
+    </pre>
+    <h2>Citações Simples</h2>
+    <p>Usando a tag Q da para fazer citações do tipo <q>Foda-se,ela não vai ter escolha,não havera leis,não estarei presos as amarras da sociedade</q></p>
+    <h2>Citações Completas</h2>
+    <p>Como ja dizia Pedro Alvares Cabral 
+        <blockquote cite="Pedro Alvares Cabral">Passarinho que come pedra sabe o cu que tem</blockquote>
+    </p>
+    <h2>Abreviações</h2>
+    <p>Estou aprendendo <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>.</p>
+    <h2>Texto invertido kkkkk</h2>
+    <p>Nomes ao contrario</p>
+    <p>Yago: &#x1F62D;</p>
+    <p>Cara que se chama <bdo dir="rtl">Degustador De Penis Masculinos</bdo>:&#x1F5FF;</p>
+    <h2>Listas</h2>
+    <h3>Lista (Ordenada) do que mais gosto</h3>
+    <ol type="1" start="1">
+        <li>placa de video que nao esquenta</li>
+        <li>Flamengo</li>
+        <li>Jogar um fps liso em que a mira é boa</li>
+    </ol>
+    <h3>Lista Nao Ordenada</h3>
+    <h4>Jogos que preciso zerar</h4>
+    <ul type="circle"> <!-- disc circle square -->
+        <li>Elden Ring</li>
+        <li>The Witcher 4</li>
+        <li>Cyberpunk DLC</li>
+    </ul>
+    <h2>Juntando Listas</h3>
+        <h3>Jogos que vou jogar</h3>
+        <ol>
+            <li>Vão Lançar</li>
+            <ul type="circle">
+                <li>Cyberpunk</li>
+                <li>Elden Ring</li>
+                <li>The Witcher 4</li>
+            </ul>
+            <li>Ja Lançaram</li>
+            <ul type="circle">
+                <li>Todos os jogos que comprei na steam</li>
+            </ul>
+        </ol>
+    <h2>Lista de Definições</h2>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de definição pipipi popopo</dd>
+    </dl>
+</body>
+</html>
