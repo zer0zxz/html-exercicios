@@ -22,7 +22,7 @@
     <fieldset>
         <legend>Firulas</legend>
         <label for="icor">Cor:</label><input type="color" name="cor" id="icor"><br>
-        <label for="inivel">Nivel:</label><input type="range" name="nivel" id="inivel" min="0" max="100"><br>
+        <label for="inivel">Nivel:</label><input type="range" name="nivel" id="inivel" min="0" max="100" oninput="ival.innerHTML = Number(inivel.value)"><output id="ival">50</output><br>
         <label for="immg">Imagem:</label><input type="file" src="img" alt="iigm" id="immg"><br>
         <label for="estado">Estado:</label><select name="estado" id="iest">
             <optgroup label="Suldesde">
@@ -34,7 +34,13 @@
         <label for="iprof">Profissão:</label><input type="text" name="prof" id="iprof" list="lstprof">
         <datalist id="lstprof">
             <option>Analista de Qualidade</option>
-        </datalist>
+        </datalist><br>
+        <label for="in1">Numero 1:</label>
+        <input type="number" name="n1" id="in1" min="0" max="50" oninput="isoma.innerHTML = Number(in1.value)+ Number(in2.value)">
+        <label for="in2">Numero 2:</label>
+        <input type="number" name="n2" id="in2" min="0" max="50" oninput="isoma.innerHTML = Number(in1.value)+ Number(in2.value)">
+        <label for="isoma">Soma:</label>
+        <output name="soma" id="isoma">0</output>
         
     </fieldset>
     <p>
