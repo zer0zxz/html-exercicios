@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="cadastro.php" method="post" autocomplete="off">
+    <fieldset>
+        <legend>sexo</legend>
+        <input type="radio" name="sexo" id="imasc" value="M"><label for="imasc">Masculino</label><br>
+        <input type="radio" name="sexo" id="ifem" value="F"><label for="ifem">Feminino</label>
+    </fieldset>
+    <fieldset>
+        <legend>Jogo bão</legend>
+        <input type="checkbox" name="cyberpunk" id="cp"><label for="cp">Cyberpunk 2077</label><br>
+        <input type="checkbox" name="thewitcher3" id="tw3"><label for="tw3">The Witcher 3</label><br>
+        <input type="checkbox" name="gta5" id="gtav"><label for="gtav">GTA V</label><br>
+        <input type="checkbox" name="assassinscreed" id="ac"><label for="ac">Assassins Creed</label><br>
+    </fieldset>
+    <fieldset>
+        <legend>Firulas</legend>
+        <label for="icor">Cor:</label><input type="color" name="cor" id="icor"><br>
+        <label for="inivel">Nivel:</label><input type="range" name="nivel" id="inivel" min="0" max="100"><br>
+        <label for="immg">Imagem:</label><input type="file" src="img" alt="iigm" id="immg"><br>
+        <label for="estado">Estado:</label><select name="estado" id="iest">
+            <optgroup label="Suldesde">
+                <option value="sp">São Paulo</option>
+                <option value="rj">Rio de Janeiro</option>
+                <option value="mg">Minas Gerais</option>
+            </optgroup>
+        </select><br>
+        <label for="iprof">Profissão:</label><input type="text" name="prof" id="iprof" list="lstprof">
+        <datalist id="lstprof">
+            <option>Analista de Qualidade</option>
+        </datalist>
+        
+    </fieldset>
+    <p>
+        <input type="submit" value="enviar">
+        <input type="reset" value="resetar">
+    </p>
+    </form>
+    
+</body>
+</html>
